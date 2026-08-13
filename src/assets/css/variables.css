@@ -1,0 +1,31 @@
+:root {
+  /* Colors strictly matching morez.co */
+  --bg-primary: #000000;
+  --bg-secondary: #0a0a0c;
+  --bg-card: #121216;
+  --bg-card-hover: #18181f;
+  --text-primary: #ffffff;
+  --text-secondary: #abb8c3;
+  --accent-cyan: #0693e3;
+  --accent-purple: #9b51e0;
+  --accent-lavender: #BC80BB;
+  --accent-sage: #97C594;
+  --accent-blue: #669ACA;
+  --border-color: rgba(255, 255, 255, 0.12);
+  --border-glow: rgba(188, 128, 187, 0.35);
+
+  /* Geist Typography */
+  --font-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Geist Mono', Monaco, monospace;
+
+  /* Layout & Elevations */
+  --container-max-width: 1240px;
+  --header-height: 80px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+  --shadow-glow: 0 10px 30px rgba(188, 128, 187, 0.15);
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Scrape.do Ingestion Request/Response Contract",
+  "type": "object",
+  "properties": {
+    "targetUrl": {
+      "type": "string",
+      "format": "uri",
+      "example": "https://morez.co/#hello"
+    },
+    "scrapeDoToken": {
+      "type": "string",
+      "description": "API token passed strictly via server environment variable"
+    },
+    "outputSummary": {
+      "type": "object",
+      "properties": {
+        "statusCode": { "type": "integer", "example": 200 },
+        "pageTitle": { "type": "string" },
+        "colorTokens": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "extractedSections": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

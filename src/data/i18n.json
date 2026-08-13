@@ -1,0 +1,110 @@
+{
+  "es": {
+    "nav": {
+      "home": "Inicio",
+      "about": "Sobre Mí",
+      "projects": "Proyectos",
+      "skills": "Habilidades",
+      "contact": "Contacto"
+    },
+    "hero": {
+      "greeting": "¡Hola! Soy",
+      "name": "Pablo Sebastin",
+      "main_h1": "¡Hola! Soy Pablo sebastian,<br>Ingeniero de Software &amp;<br><span class=\"hero-title-accent\">Desarrollador Full-Stack</span>",
+      "subtitle": "Especializado en arquitectura limpia, plataformas de comercio electrónico, sistemas empresariales de administración, automatización de datos en Python y aplicaciones web de alto rendimiento.",
+      "emblem": "PABLO sebastian • PORTAFOLIO 2026 • DEV •"
+    },
+    "ticker": [
+      "Arquitectura de Software",
+      "Sistemas Distribuidos",
+      "Desarrollo Full-Stack",
+      "Optimización de Rendimiento",
+      "API RESTful & Microservicios",
+      "Diseño UI/UX Responsivo"
+    ],
+    "projects": {
+      "title": "Proyectos Destacados",
+      "subtitle": "Una selección de mis proyectos en desarrollo web full-stack, arquitectura de software y automatización de procesos.",
+      "filter_all": "Todos",
+      "filter_web": "Desarrollo Web",
+      "filter_architecture": "Arquitectura & Backend",
+      "filter_tools": "Herramientas & Scraping",
+      "view_demo": "Demostración En Vivo →",
+      "view_code": "Ver Código →"
+    },
+    "skills": {
+      "title": "Habilidades & Dominio Técnico",
+      "subtitle": "Tecnologías, lenguajes y herramientas que utilizo para construir soluciones de ingeniería de alto impacto.",
+      "cat_languages": "Lenguajes de Programación",
+      "cat_frameworks": "Frameworks & Herramientas",
+      "cat_architecture": "Arquitectura & DevOps",
+      "cat_practices": "Prácticas de Calidad"
+    },
+    "contact": {
+      "title": "Contacto & Colaboración",
+      "subtitle": "¿Tienes un proyecto en mente o buscas a Pablo sebastian para tu equipo? Envíame un mensaje.",
+      "name_label": "Nombre Completo",
+      "email_label": "Correo Electrónico",
+      "message_label": "Mensaje",
+      "send_btn": "Enviar Mensaje",
+      "success_msg": "¡Gracias por tu mensaje! Me pondré en contacto contigo muy pronto."
+    },
+    "footer": {
+      "text": "© 2026 Pablo sebastian • Portafolio de Ingeniería de Software."
+    }
+  },
+  "en": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "skills": "Skills",
+      "contact": "Contact"
+    },
+    "hero": {
+      "greeting": "Hi! I'm",
+      "name": "Pablo sebastian",
+      "main_h1": "Hi! I'm Pablo sebastian,<br>Software Engineer &amp;<br><span class=\"hero-title-accent\">Full-Stack Developer</span>",
+      "subtitle": "Specialized in clean architecture, e-commerce platforms, enterprise admin systems, Python data automation, and high-performance web applications.",
+      "emblem": "PABLO sebastian • PORTFOLIO 2026 • DEV •"
+    },
+    "ticker": [
+      "Software Architecture",
+      "Distributed Systems",
+      "Full-Stack Development",
+      "Performance Optimization",
+      "RESTful APIs & Microservices",
+      "Responsive UI/UX Design"
+    ],
+    "projects": {
+      "title": "Featured Projects",
+      "subtitle": "A curated selection of my work across full-stack web engineering, software architecture, and process automation.",
+      "filter_all": "All",
+      "filter_web": "Web Development",
+      "filter_architecture": "Architecture & Backend",
+      "filter_tools": "Tools & Scraping",
+      "view_demo": "Live Demo →",
+      "view_code": "Source Code →"
+    },
+    "skills": {
+      "title": "Skills & Technical Expertise",
+      "subtitle": "Technologies, languages, and frameworks I leverage to engineer high-impact solutions.",
+      "cat_languages": "Programming Languages",
+      "cat_frameworks": "Frameworks & Tools",
+      "cat_architecture": "Architecture & DevOps",
+      "cat_practices": "Quality Practices"
+    },
+    "contact": {
+      "title": "Contact & Collaboration",
+      "subtitle": "Have a project in mind? Send a message.",
+      "name_label": "Full Name",
+      "email_label": "Email Address",
+      "message_label": "Message",
+      "send_btn": "Send Message",
+      "success_msg": "Thank you for reaching out! I will get back to you shortly."
+    },
+    "footer": {
+      "text": "© 2026 Pablo sebastian • Software Engineering"
+    }
+  }
+}

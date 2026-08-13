@@ -1,0 +1,58 @@
+{
+  "scrapedAt": "2026-08-13T19:06:53.216Z",
+  "targetUrl": "https://morez.co/",
+  "meta": {
+    "title": "Agence Web Lyon 69 - Création site internet, SEO &amp; SEA",
+    "description": "MOREZ est une Agence Web basée à Lyon spécialiste en création de site internet sur mesure, webdesign, e-commerce et stratégie digitale.",
+    "totalHtmlBytes": 240840
+  },
+  "extractedAnchors": [
+    "#nectar-header-layout-centered-menu-css",
+    "#header-css-css",
+    "#footer-css-css",
+    "#contact-form-css",
+    "#header-space",
+    "#header-outer",
+    "#hello",
+    "#footer-outer"
+  ],
+  "extractedColors": [
+    "#000000",
+    "#abb8c3",
+    "#ffffff",
+    "#f78da7",
+    "#cf2e2e",
+    "#ff6900",
+    "#fcb900",
+    "#7bdcb5",
+    "#00d084",
+    "#8ed1fc",
+    "#0693e3",
+    "#9b51e0",
+    "#32373c",
+    "#BC80BB",
+    "#97C594"
+  ],
+  "designHighlights": [
+    {
+      "component": "Hero Section",
+      "theme": "Deep Pitch Black (#0a0a0c) background with dynamic ambient spotlight glow"
+    },
+    {
+      "component": "Typography & Accents",
+      "theme": "Crisp white headers (#ffffff), lavender accent (#BC80BB), sage green badge (#97C594)"
+    },
+    {
+      "component": "Animations & Badges",
+      "theme": "12s infinite rotating badge circle, continuous marquee scrolling text ticker"
+    },
+    {
+      "component": "Navigation",
+      "theme": "Fixed floating backdrop-blur navbar with section smooth scrolling"
+    },
+    {
+      "component": "Projects Showcase Grid",
+      "theme": "Image cards with smooth scale-up hover transform and category tag filtering"
+    }
+  ]
+}

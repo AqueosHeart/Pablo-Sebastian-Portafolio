@@ -1,0 +1,92 @@
+[
+  {
+    "id": "shop-ecommerce",
+    "category": "web-engineering",
+    "solidColor": "#9b51e0",
+    "image": "/src/assets/images/projects/shop.png",
+    "title": {
+      "es": "Shop E-Commerce Platform",
+      "en": "Shop E-Commerce Platform"
+    },
+    "subtitle": "Plataforma de comercio electrónico con pagos Stripe, PostgreSQL Prisma y autenticación segura.",
+    "summary": {
+      "es": "Aplicación web Next.js full-stack con catálogo dinámico, carrito de compras, procesamiento de pagos con Stripe, base de datos PostgreSQL con Prisma y autenticación de usuarios.",
+      "en": "Full-stack Next.js e-commerce application featuring dynamic product catalog, shopping cart, Stripe payment processing, PostgreSQL with Prisma, and secure user authentication."
+    },
+    "tags": ["Next.js", "React", "Prisma", "PostgreSQL", "Stripe", "Better-Auth", "Tailwind CSS"],
+    "githubUrl": "https://github.com/SEBASTIAN/Shop",
+    "demoUrl": "https://shop.local"
+  },
+  {
+    "id": "work-app",
+    "category": "web-engineering",
+    "solidColor": "#669ACA",
+    "image": "/src/assets/images/projects/work.png",
+    "title": {
+      "es": "Interactive Work Application",
+      "en": "Interactive Work Application"
+    },
+    "subtitle": "Aplicación web de alto rendimiento con sistema de diseño modular e integración de correos.",
+    "summary": {
+      "es": "Plataforma web React & Vite optimizada con componentes de interfaz responsivos, arquitectura limpia y servicio backend para envío automatizado de correo.",
+      "en": "Optimized React & Vite web platform featuring responsive UI components, clean architecture, and an automated backend email dispatch service."
+    },
+    "tags": ["React", "Vite", "Tailwind CSS", "Lucide Icons", "Python Automation"],
+    "githubUrl": "https://github.com/SEBASTIAN/work",
+    "demoUrl": "https://work.local"
+  },
+  {
+    "id": "creator-os",
+    "category": "architecture",
+    "solidColor": "#e17055",
+    "image": "/src/assets/images/projects/creator-os.png",
+    "title": {
+      "es": "Creator OS Platform",
+      "en": "Creator OS Platform"
+    },
+    "subtitle": "Sistema operativo de contenido con investigación profunda e IA para guiones y SEO.",
+    "summary": {
+      "es": "Sistema operativo de creación de contenido para gestión de ideas, investigación automatizada, generación de guiones y flujo de optimización SEO multimodal.",
+      "en": "Comprehensive content creation operating system for idea management, automated deep research, script generation, and multimodal SEO optimization workflows."
+    },
+    "tags": ["Next.js", "React", "TypeScript", "Prisma", "Zod", "Multimodal SEO"],
+    "githubUrl": "https://github.com/SEBASTIAN/Work2",
+    "demoUrl": "https://creator-os.local"
+  },
+  {
+    "id": "aarc-auth",
+    "category": "architecture",
+    "solidColor": "#97C594",
+    "image": "/src/assets/images/projects/aarc-auth.png",
+    "title": {
+      "es": "AARC Auth & Admin System",
+      "en": "AARC Auth & Admin System"
+    },
+    "subtitle": "Portal de administración empresarial con tablas dinámicas, códigos QR y exportación de datos.",
+    "summary": {
+      "es": "Portal de autenticación y gestión empresarial con tablas dinámicas drag-and-drop, generación de códigos QR, exportación a PDF/Excel y control de acceso basado en roles.",
+      "en": "Enterprise authentication & admin management portal featuring dynamic drag-and-drop tables, QR code generation, PDF/Excel data export, and role-based access control."
+    },
+    "tags": ["Next.js", "Drizzle ORM", "MySQL", "Better-Auth", "Shadcn UI", "TanStack Table"],
+    "githubUrl": "https://github.com/SEBASTIAN/sistemas-1",
+    "demoUrl": "https://aarc-auth.local"
+  },
+  {
+    "id": "sayg-automation",
+    "category": "web-engineering",
+    "solidColor": "#fcb900",
+    "image": "/src/assets/images/projects/sayg-automation.png",
+    "title": {
+      "es": "SayG Document Automation",
+      "en": "SayG Document Automation"
+    },
+    "subtitle": "Motor de automatización con Python y Playwright para análisis y subida masiva de archivos.",
+    "summary": {
+      "es": "Suite de automatización en Python y Playwright para la descarga masiva, análisis de documentos de productores, scraping web e ingestión automatizada de expedientes.",
+      "en": "Automated Python & Playwright suite for bulk downloading, analyzing producer records, web scraping, and automated file ingestion workflows."
+    },
+    "tags": ["Python", "Playwright", "Web Scraping", "Data Extraction", "Automation"],
+    "githubUrl": "https://github.com/SEBASTIAN/SayG-programa-subir-archivos",
+    "demoUrl": "https://sayg.local"
+  }
+]
