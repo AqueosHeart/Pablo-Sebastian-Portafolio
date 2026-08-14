@@ -3,7 +3,7 @@
     "id": "shop-ecommerce",
     "category": "web-engineering",
     "solidColor": "#9b51e0",
-    "image": "/src/assets/images/projects/shop.png",
+    "image": "/assets/images/projects/shop.png",
     "title": {
       "es": "Shop E-Commerce Platform",
       "en": "Shop E-Commerce Platform"
@@ -21,7 +21,7 @@
     "id": "work-app",
     "category": "web-engineering",
     "solidColor": "#669ACA",
-    "image": "/src/assets/images/projects/work.png",
+    "image": "/assets/images/projects/work.png",
     "title": {
       "es": "Interactive Work Application",
       "en": "Interactive Work Application"
@@ -39,7 +39,7 @@
     "id": "creator-os",
     "category": "architecture",
     "solidColor": "#e17055",
-    "image": "/src/assets/images/projects/creator-os.png",
+    "image": "/assets/images/projects/creator-os.png",
     "title": {
       "es": "Creator OS Platform",
       "en": "Creator OS Platform"
@@ -57,7 +57,7 @@
     "id": "aarc-auth",
     "category": "architecture",
     "solidColor": "#97C594",
-    "image": "/src/assets/images/projects/aarc-auth.png",
+    "image": "/assets/images/projects/aarc-auth.png",
     "title": {
       "es": "AARC Auth & Admin System",
       "en": "AARC Auth & Admin System"
@@ -75,7 +75,7 @@
     "id": "sayg-automation",
     "category": "web-engineering",
     "solidColor": "#fcb900",
-    "image": "/src/assets/images/projects/sayg-automation.png",
+    "image": "/assets/images/projects/sayg-automation.png",
     "title": {
       "es": "SayG Document Automation",
       "en": "SayG Document Automation"
