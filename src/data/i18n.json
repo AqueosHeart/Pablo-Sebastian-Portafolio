@@ -10,7 +10,7 @@
     "hero": {
       "greeting": "¡Hola! Soy",
       "name": "Pablo Sebastian",
-      "main_h1": "¡Hola! Soy Pablo sebastian,<br>Ingeniero de Software &amp;<br><span class=\"hero-title-accent\">Desarrollador Full-Stack</span>",
+      "main_h1": "¡Hola! Soy Pablo Sebastián,<br>Ingeniero de Software y<br><span class=\"hero-title-accent\">Desarrollador Full-Stack</span>",
       "subtitle": "Especializado en arquitectura limpia, plataformas de comercio electrónico, sistemas empresariales de administración, automatización de datos en Python y aplicaciones web de alto rendimiento.",
       "emblem": "PABLO sebastian • PORTAFOLIO 2026 • DEV •"
     },
@@ -74,7 +74,7 @@
     "hero": {
       "greeting": "Hi! I'm",
       "name": "Pablo sebastian",
-      "main_h1": "Hi! I'm Pablo sebastian,<br>Software Engineer &amp;<br><span class=\"hero-title-accent\">Full-Stack Developer</span>",
+      "main_h1": "Hi! I'm Pablo Sebastián,<br>Software Engineer &amp;<br><span class=\"hero-title-accent\">Full-Stack Developer</span>",
       "subtitle": "Specialized in clean architecture, e-commerce platforms, enterprise admin systems, Python data automation, and high-performance web applications.",
       "emblem": "PABLO sebastian • PORTFOLIO 2026 • DEV •"
     },
