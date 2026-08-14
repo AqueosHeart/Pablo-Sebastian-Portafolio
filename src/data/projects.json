@@ -13,6 +13,44 @@
       "es": "Aplicación web Next.js full-stack con catálogo dinámico, carrito de compras, procesamiento de pagos con Stripe, base de datos PostgreSQL con Prisma y autenticación de usuarios.",
       "en": "Full-stack Next.js e-commerce application featuring dynamic product catalog, shopping cart, Stripe payment processing, PostgreSQL with Prisma, and secure user authentication."
     },
+    "details": {
+      "es": "Una plataforma de comercio electrónico de extremo a extremo construida para alto rendimiento y escalabilidad. Integra una pasarela de pagos con Stripe, gestión relacional con PostgreSQL y Prisma ORM, y una experiencia de usuario fluida con animaciones modernas y filtrado reactivo.",
+      "en": "An end-to-end e-commerce platform built for high performance and scalability. Integrates Stripe payment gateway, relational data modeling with PostgreSQL and Prisma ORM, and a seamless shopping user experience with modern animations and reactive filtering."
+    },
+    "features": [
+      {
+        "es": "Catálogo reactivo con filtrado instantáneo por categoría, precio y disponibilidad.",
+        "en": "Reactive catalog with instantaneous filtering by category, price, and stock."
+      },
+      {
+        "es": "Pasarela de pagos segura con Stripe Checkout y manejo de webhooks para confirmación.",
+        "en": "Secure payment gateway with Stripe Checkout and robust webhook processing."
+      },
+      {
+        "es": "Persistencia de datos y modelos relacionales optimizados en PostgreSQL mediante Prisma ORM.",
+        "en": "Data persistence and optimized relational models in PostgreSQL powered by Prisma ORM."
+      },
+      {
+        "es": "Autenticación segura basada en sesiones y protección contra vulnerabilidades frontend/backend.",
+        "en": "Secure session-based authentication with comprehensive frontend/backend security guardrails."
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/images/projects/shop.png",
+        "caption": {
+          "es": "Catálogo principal y vista de productos con navegación interactiva y filtros dinámicos.",
+          "en": "Main catalog and product showcase view with interactive navigation and dynamic filters."
+        }
+      },
+      {
+        "src": "/assets/images/projects/shop-checkout.jpg",
+        "caption": {
+          "es": "Flujo de pago optimizado con integración de Stripe Checkout y pasarela de cobro segura.",
+          "en": "Optimized checkout flow with Stripe Checkout integration and secure payment gateway."
+        }
+      }
+    ],
     "tags": ["Next.js", "React", "Prisma", "PostgreSQL", "Stripe", "Better-Auth", "Tailwind CSS"],
     "githubUrl": "https://github.com/SEBASTIAN/Shop",
     "demoUrl": "https://shop.local"
@@ -31,6 +69,44 @@
       "es": "Plataforma web React & Vite optimizada con componentes de interfaz responsivos, arquitectura limpia y servicio backend para envío automatizado de correo.",
       "en": "Optimized React & Vite web platform featuring responsive UI components, clean architecture, and an automated backend email dispatch service."
     },
+    "details": {
+      "es": "Plataforma web modular de productividad empresarial enfocada en una experiencia de usuario rápida y sin fricción. Diseñada con micro-interacciones pulidas, cola de despacho de notificaciones y diseño glassmórfico de alto impacto visual.",
+      "en": "Modular enterprise productivity web platform focused on ultra-fast, frictionless user experience. Designed with polished micro-interactions, automated notification dispatch queues, and high-impact glassmorphic visual aesthetics."
+    },
+    "features": [
+      {
+        "es": "Arquitectura basada en componentes atómicos reutilizables con Tailwind CSS.",
+        "en": "Atomic component-driven architecture built for reuse with Tailwind CSS."
+      },
+      {
+        "es": "Motor de automatización y despacho de correos electrónicos con cola de reintentos.",
+        "en": "Email automation and dispatch engine with intelligent retry queue handling."
+      },
+      {
+        "es": "Monitoreo en tiempo real de telemetría de servicio y rendimiento de campañas.",
+        "en": "Real-time service telemetry monitoring and campaign performance analytics."
+      },
+      {
+        "es": "Soporte completo para temas oscuros y adaptabilidad multidispositivo impecable.",
+        "en": "Full dark theme support with flawless multi-device responsiveness."
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/images/projects/work.png",
+        "caption": {
+          "es": "Panel de control principal e interfaz interactiva del espacio de trabajo.",
+          "en": "Main workspace dashboard and interactive productivity interface."
+        }
+      },
+      {
+        "src": "/assets/images/projects/work-automation.jpg",
+        "caption": {
+          "es": "Módulo de automatización de correos electrónicos y telemetría de colas de mensajes.",
+          "en": "Email dispatch automation module and message queue telemetry logs."
+        }
+      }
+    ],
     "tags": ["React", "Vite", "Tailwind CSS", "Lucide Icons", "Python Automation"],
     "githubUrl": "https://github.com/SEBASTIAN/work",
     "demoUrl": "https://work.local"
@@ -49,6 +125,44 @@
       "es": "Sistema operativo de creación de contenido para gestión de ideas, investigación automatizada, generación de guiones y flujo de optimización SEO multimodal.",
       "en": "Comprehensive content creation operating system for idea management, automated deep research, script generation, and multimodal SEO optimization workflows."
     },
+    "details": {
+      "es": "Solución integral para creadores y equipos de medios que transforma ideas crudas en contenido estructurado de alto rendimiento. Incorpora flujos de investigación profunda con LLMs, análisis semántico SEO y un estudio visual de guionizado nodo por nodo.",
+      "en": "All-in-one workstation for creators and media teams transforming raw ideas into high-performing structured content. Incorporates automated deep research pipelines, multimodal SEO semantic analysis, and node-based script structuring."
+    },
+    "features": [
+      {
+        "es": "Espacio de investigación profunda con agregación automática de fuentes y síntesis con IA.",
+        "en": "Deep research workspace with automated source aggregation and AI synthesis."
+      },
+      {
+        "es": "Generador de guiones visual estructurado en nodos y actos narrativos.",
+        "en": "Visual node-based script generator structured by narrative acts and key hooks."
+      },
+      {
+        "es": "Análisis y optimización SEO multimodal para maximizar el alcance del contenido.",
+        "en": "Multimodal SEO analyzer and optimization engine to maximize content reach."
+      },
+      {
+        "es": "Validación estricta de esquemas de datos con TypeScript y Zod.",
+        "en": "Strict end-to-end data schema validation powered by TypeScript and Zod."
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/images/projects/creator-os.png",
+        "caption": {
+          "es": "Tablero general de Creator OS con gestión de ideas y biblioteca de contenido.",
+          "en": "Creator OS main hub with idea pipeline management and content repository."
+        }
+      },
+      {
+        "src": "/assets/images/projects/creator-research.jpg",
+        "caption": {
+          "es": "Espacio de trabajo de investigación profunda y generador de guiones con IA estructurado en nodos.",
+          "en": "Deep research workspace and AI script generator with node-based narrative progression."
+        }
+      }
+    ],
     "tags": ["Next.js", "React", "TypeScript", "Prisma", "Zod", "Multimodal SEO"],
     "githubUrl": "https://github.com/SEBASTIAN/Work2",
     "demoUrl": "https://creator-os.local"
@@ -67,6 +181,51 @@
       "es": "Portal de autenticación y gestión empresarial con tablas dinámicas drag-and-drop, generación de códigos QR, exportación a PDF/Excel y control de acceso basado en roles.",
       "en": "Enterprise authentication & admin management portal featuring dynamic drag-and-drop tables, QR code generation, PDF/Excel data export, and role-based access control."
     },
+    "details": {
+      "es": "Sistema administrativo y de control de acceso corporativo de misión crítica. Integra autenticación moderna con Better-Auth, tablas dinámicas con TanStack Table, asignación granular de permisos RBAC, generación por lotes de códigos QR y motor de exportación a documentos PDF y hojas Excel.",
+      "en": "Mission-critical corporate administration and access control suite. Integrates modern authentication via Better-Auth, interactive data tables with TanStack Table, granular RBAC permission matrix, batch QR code generation, and direct PDF/Excel export engines."
+    },
+    "features": [
+      {
+        "es": "Control de Acceso Basado en Roles (RBAC) con permisos configurables a nivel de usuario y módulo.",
+        "en": "Role-Based Access Control (RBAC) with granular user and module-level permission matrices."
+      },
+      {
+        "es": "Tablas de datos dinámicas con TanStack Table, ordenamiento multidimensional y filtros avanzados.",
+        "en": "Dynamic data tables powered by TanStack Table with multi-column sorting and filtering."
+      },
+      {
+        "es": "Generador de códigos QR por lotes con personalización de diseño y marca institucional.",
+        "en": "Batch QR code generator featuring customizable visual branding and preset designs."
+      },
+      {
+        "es": "Exportación automatizada y formateada de reportes operativos a PDF y Excel.",
+        "en": "Automated, pre-formatted operational report exports directly to PDF and Excel."
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/images/projects/aarc-auth.png",
+        "caption": {
+          "es": "Pantalla de inicio de sesión y autenticación segura con Better-Auth y control de acceso.",
+          "en": "Secure authentication and login portal with Better-Auth and access control."
+        }
+      },
+      {
+        "src": "/assets/images/projects/aarc-table.jpg",
+        "caption": {
+          "es": "Panel de gestión de usuarios y control de acceso granular basado en roles (RBAC).",
+          "en": "User management dashboard with granular Role-Based Access Control (RBAC)."
+        }
+      },
+      {
+        "src": "/assets/images/projects/aarc-qr-export.jpg",
+        "caption": {
+          "es": "Generador de códigos QR por lotes y centro de exportación de reportes PDF/Excel.",
+          "en": "Batch QR code studio with live preview and PDF/Excel report export module."
+        }
+      }
+    ],
     "tags": ["Next.js", "Drizzle ORM", "MySQL", "Better-Auth", "Shadcn UI", "TanStack Table"],
     "githubUrl": "https://github.com/SEBASTIAN/sistemas-1",
     "demoUrl": "https://aarc-auth.local"
@@ -85,6 +244,44 @@
       "es": "Suite de automatización en Python y Playwright para la descarga masiva, análisis de documentos de productores, scraping web e ingestión automatizada de expedientes.",
       "en": "Automated Python & Playwright suite for bulk downloading, analyzing producer records, web scraping, and automated file ingestion workflows."
     },
+    "details": {
+      "es": "Herramienta de automatización y scraping de alto volumen para agilizar la gestión de expedientes agrícolas y de productores. Utiliza Playwright para navegación autónoma en portales web, extracción inteligente de información y sincronización continua en la nube.",
+      "en": "High-volume web scraping and automation pipeline designed to streamline document workflows. Leverages Playwright for autonomous portal navigation, structured data extraction, and reliable mass cloud storage synchronization."
+    },
+    "features": [
+      {
+        "es": "Navegación y extracción desatendida mediante scripts de Playwright y Python.",
+        "en": "Unattended web scraping and file extraction driven by Python and Playwright."
+      },
+      {
+        "es": "Procesamiento y análisis masivo de expedientes con tolerancia a fallos y reintentos.",
+        "en": "Fault-tolerant bulk file processing and validation pipeline."
+      },
+      {
+        "es": "Panel de monitoreo con estadísticas de scraping en tiempo real y tasa de éxito del 99.8%.",
+        "en": "Live telemetry dashboard tracking scraping rates, worker status, and 99.8% success rates."
+      },
+      {
+        "es": "Mapeo automático de campos y subida estructurada a servidores de destino.",
+        "en": "Automatic field mapping and structured batch uploads to enterprise target destinations."
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/images/projects/sayg-automation.png",
+        "caption": {
+          "es": "Consola principal de automatización y control de tareas programadas en Python.",
+          "en": "Main Python automation console and scheduled background task manager."
+        }
+      },
+      {
+        "src": "/assets/images/projects/sayg-pipeline.jpg",
+        "caption": {
+          "es": "Pipeline de scraping de archivos con Playwright, métricas en vivo y logs de trabajadores.",
+          "en": "Playwright file scraping pipeline with live throughput metrics and worker logs."
+        }
+      }
+    ],
     "tags": ["Python", "Playwright", "Web Scraping", "Data Extraction", "Automation"],
     "githubUrl": "https://github.com/SEBASTIAN/SayG-programa-subir-archivos",
     "demoUrl": "https://sayg.local"

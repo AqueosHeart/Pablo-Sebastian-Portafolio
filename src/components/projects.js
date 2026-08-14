@@ -1,5 +1,6 @@
 import projectsData from '../data/projects.json';
 import { i18n } from '../services/i18n.js';
+import { openProjectModal, initProjectModal } from './projectModal.js';
 
 import javascriptIcon from '../assets/icons/JavaScript.svg';
 import nextIcon from '../assets/icons/Next.js.svg';
@@ -53,8 +54,15 @@ export function renderProjects() {
     const icons = [...new Set(proj.tags.map(tag => ICON_MAP[tag] || javascriptIcon))];
 
     return `
-      <article class="project-showcase-item">
-        <a href="${proj.githubUrl || '#'}" target="_blank" rel="noopener" class="project-panel-card" style="background-color: ${proj.solidColor || '#9b51e0'};">
+      <article class="project-showcase-item" data-project-id="${proj.id}">
+        <div 
+          role="button" 
+          tabindex="0" 
+          aria-label="${proj.title[currentLang] || proj.title['es']}" 
+          class="project-panel-card" 
+          data-project-id="${proj.id}" 
+          style="background-color: ${proj.solidColor || '#9b51e0'};"
+        >
           
           <!-- Default State: Solid Plain Pastel Color Background with Center Icon/Logo -->
           <div class="project-panel-default-content">
@@ -67,13 +75,23 @@ export function renderProjects() {
           <!-- Hover State: Smooth Transition to Reveal Real Screenshot Photo -->
           <div class="project-panel-photo-overlay">
             <img src="${proj.image}" alt="${proj.title[currentLang] || proj.title['es']}" loading="lazy" class="project-panel-photo-img" />
+            
+            <!-- Quick View Indicator Overlay -->
+            <div class="project-panel-quickview-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 3h6v6"></path>
+                <path d="M10 14 21 3"></path>
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              </svg>
+              <span>${i18n.t('projects.click_hint')}</span>
+            </div>
           </div>
 
-        </a>
+        </div>
 
         <div class="project-info">
-          <h3 class="project-title-text">${proj.title[currentLang] || proj.title['es']}</h3>
-          <a href="${proj.githubUrl || '#'}" target="_blank" rel="noopener" class="project-url-link">${proj.githubUrl}</a>
+          <h3 class="project-title-text" data-project-id="${proj.id}">${proj.title[currentLang] || proj.title['es']}</h3>
+          <a href="${proj.githubUrl || '#'}" target="_blank" rel="noopener noreferrer" class="project-url-link">${proj.githubUrl}</a>
           
           <!-- Stack represented by PURE WHITE ICONS ONLY (No text, labels, or pill borders) -->
           <div class="project-pure-icons-stack">
@@ -101,5 +119,34 @@ export function renderProjects() {
 }
 
 export function bindProjectsEvents(container, onFilterChange) {
-  // No filter event bindings needed
+  initProjectModal();
+
+  const projectCards = container.querySelectorAll('.project-panel-card, .project-title-text');
+  projectCards.forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const projectId = el.getAttribute('data-project-id');
+      if (projectId) {
+        openProjectModal(projectId);
+      }
+    });
+
+    el.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const projectId = el.getAttribute('data-project-id');
+        if (projectId) {
+          openProjectModal(projectId);
+        }
+      }
+    });
+  });
+
+  // Ensure direct GitHub link click does not trigger modal opening
+  const githubLinks = container.querySelectorAll('.project-url-link');
+  githubLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  });
 }

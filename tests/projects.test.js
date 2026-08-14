@@ -16,4 +16,24 @@ describe('Projects Data', () => {
     const webProjects = projectsData.filter(p => p.category === 'web-engineering');
     expect(webProjects.every(p => p.category === 'web-engineering')).toBe(true);
   });
+
+  it('should have rich galleries with bilingual captions and features', () => {
+    projectsData.forEach(proj => {
+      expect(Array.isArray(proj.gallery)).toBe(true);
+      expect(proj.gallery.length).toBeGreaterThan(0);
+      proj.gallery.forEach(item => {
+        expect(typeof item.src).toBe('string');
+        expect(item.caption).toHaveProperty('es');
+        expect(item.caption).toHaveProperty('en');
+      });
+
+      if (proj.features) {
+        expect(Array.isArray(proj.features)).toBe(true);
+        proj.features.forEach(feat => {
+          expect(feat).toHaveProperty('es');
+          expect(feat).toHaveProperty('en');
+        });
+      }
+    });
+  });
 });

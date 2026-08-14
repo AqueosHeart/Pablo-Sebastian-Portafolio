@@ -30,7 +30,17 @@
       "filter_architecture": "Arquitectura & Backend",
       "filter_tools": "Herramientas & Scraping",
       "view_demo": "Demostración En Vivo →",
-      "view_code": "Ver Código →"
+      "view_code": "Ver Código →",
+      "click_hint": "Haz clic para ver detalles y capturas",
+      "modal_overview_title": "Descripción del Proyecto",
+      "modal_features_title": "Características y Arquitectura",
+      "modal_tech_title": "Stack Tecnológico",
+      "modal_view_github": "Ver en GitHub",
+      "modal_view_demo": "Ver Demo En Vivo",
+      "modal_close": "Cerrar ventana",
+      "modal_prev_img": "Captura anterior",
+      "modal_next_img": "Siguiente captura",
+      "modal_image_counter": "Captura {current} de {total}"
     },
     "skills": {
       "title": "Habilidades & Dominio Técnico",
@@ -84,7 +94,17 @@
       "filter_architecture": "Architecture & Backend",
       "filter_tools": "Tools & Scraping",
       "view_demo": "Live Demo →",
-      "view_code": "Source Code →"
+      "view_code": "Source Code →",
+      "click_hint": "Click to view project details & gallery",
+      "modal_overview_title": "Project Overview",
+      "modal_features_title": "Key Features & Architecture",
+      "modal_tech_title": "Technology Stack",
+      "modal_view_github": "View on GitHub",
+      "modal_view_demo": "Live Demo",
+      "modal_close": "Close modal",
+      "modal_prev_img": "Previous screenshot",
+      "modal_next_img": "Next screenshot",
+      "modal_image_counter": "Screenshot {current} of {total}"
     },
     "skills": {
       "title": "Skills & Technical Expertise",
