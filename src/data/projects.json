@@ -3,7 +3,7 @@
     "id": "shop-ecommerce",
     "category": "web-engineering",
     "solidColor": "#6f4e37",
-    "image": "/assets/images/projects/shop.png",
+    "image": "/assets/images/projects/limitloot-home.png",
     "title": {
       "es": "Shop E-Commerce Platform",
       "en": "Shop E-Commerce Platform"
@@ -37,29 +37,29 @@
     ],
     "gallery": [
       {
-        "src": "/assets/images/projects/shop.png",
+        "src": "/assets/images/projects/limitloot-home.png",
         "caption": {
           "es": "Catálogo principal y vista de productos con navegación interactiva y filtros dinámicos.",
           "en": "Main catalog and product showcase view with interactive navigation and dynamic filters."
         }
       },
       {
-        "src": "/assets/images/projects/limitloot-product-art.png",
+        "src": "/assets/images/projects/limitloot-cart.png",
         "caption": {
-          "es": "Arte de producto creado para la identidad visual y las colecciones de LimitLoot.",
-          "en": "Product art created for LimitLoot's visual identity and collections."
+          "es": "Página de carrito con su estado vacío, llamada a la acción y navegación de vuelta al catálogo.",
+          "en": "Cart page showing its empty state, call to action, and catalog return navigation."
         }
       },
       {
-        "src": "/assets/images/projects/limitloot-blueprint.png",
+        "src": "/assets/images/projects/limitloot-checkout.png",
         "caption": {
-          "es": "Propuesta visual para una colección de producto orientada a developers.",
-          "en": "Visual concept for a developer-focused product collection."
+          "es": "Página de checkout con la jerarquía de seguridad y el manejo del carrito vacío.",
+          "en": "Checkout page with security hierarchy and empty-cart handling."
         }
       }
     ],
     "tags": ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "Stripe", "Printful", "Tailwind CSS", "Vitest", "Vercel"],
-    "githubUrl": "https://github.com/AqueosHeart/shop",
+    "githubUrl": null,
     "demoUrl": "https://shop-umber-theta.vercel.app"
   },
   {

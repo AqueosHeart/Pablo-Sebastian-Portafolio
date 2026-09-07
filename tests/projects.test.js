@@ -37,12 +37,17 @@ describe('Projects Data', () => {
     });
   });
 
-  it('should expose the verified LimitLoot demo and source repository', () => {
+  it('should expose the verified LimitLoot demo and page-capture gallery', () => {
     const shop = projectsData.find(project => project.id === 'shop-ecommerce');
 
     expect(shop).toBeDefined();
     expect(shop.demoUrl).toBe('https://shop-umber-theta.vercel.app');
-    expect(shop.githubUrl).toBe('https://github.com/AqueosHeart/shop');
+    expect(shop.githubUrl).toBeNull();
     expect(shop.gallery).toHaveLength(3);
+    expect(shop.gallery.map(item => item.src)).toEqual([
+      '/assets/images/projects/limitloot-home.png',
+      '/assets/images/projects/limitloot-cart.png',
+      '/assets/images/projects/limitloot-checkout.png',
+    ]);
   });
 });

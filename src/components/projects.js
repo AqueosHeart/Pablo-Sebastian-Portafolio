@@ -94,7 +94,7 @@ export function renderProjects() {
           <h3 class="project-title-text" data-project-id="${proj.id}">${proj.title[currentLang] || proj.title['es']}</h3>
           <div class="project-links">
             ${publicDemoUrl ? `<a href="${publicDemoUrl}" target="_blank" rel="noopener noreferrer" class="project-url-link project-demo-link">${currentLang === 'es' ? 'Ver demo ↗' : 'Live demo ↗'}</a>` : ''}
-            <a href="${proj.githubUrl || '#'}" target="_blank" rel="noopener noreferrer" class="project-url-link">${currentLang === 'es' ? 'Código ↗' : 'Source ↗'}</a>
+            ${proj.githubUrl ? `<a href="${proj.githubUrl}" target="_blank" rel="noopener noreferrer" class="project-url-link">${currentLang === 'es' ? 'Código ↗' : 'Source ↗'}</a>` : ''}
           </div>
           
           <!-- Stack represented by PURE WHITE ICONS ONLY (No text, labels, or pill borders) -->
