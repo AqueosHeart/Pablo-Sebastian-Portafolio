@@ -36,4 +36,13 @@ describe('Projects Data', () => {
       }
     });
   });
+
+  it('should expose the verified LimitLoot demo and source repository', () => {
+    const shop = projectsData.find(project => project.id === 'shop-ecommerce');
+
+    expect(shop).toBeDefined();
+    expect(shop.demoUrl).toBe('https://shop-umber-theta.vercel.app');
+    expect(shop.githubUrl).toBe('https://github.com/AqueosHeart/shop');
+    expect(shop.gallery).toHaveLength(3);
+  });
 });

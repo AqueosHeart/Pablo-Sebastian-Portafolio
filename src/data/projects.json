@@ -2,37 +2,37 @@
   {
     "id": "shop-ecommerce",
     "category": "web-engineering",
-    "solidColor": "#9b51e0",
+    "solidColor": "#6f4e37",
     "image": "/assets/images/projects/shop.png",
     "title": {
       "es": "Shop E-Commerce Platform",
       "en": "Shop E-Commerce Platform"
     },
-    "subtitle": "Plataforma de comercio electrónico con pagos Stripe, PostgreSQL Prisma y autenticación segura.",
+    "subtitle": "Demo pública de e-commerce: catálogo, carrito persistente y checkout seguro simulado.",
     "summary": {
-      "es": "Aplicación web Next.js full-stack con catálogo dinámico, carrito de compras, procesamiento de pagos con Stripe, base de datos PostgreSQL con Prisma y autenticación de usuarios.",
-      "en": "Full-stack Next.js e-commerce application featuring dynamic product catalog, shopping cart, Stripe payment processing, PostgreSQL with Prisma, and secure user authentication."
+      "es": "Aplicación full stack desplegada públicamente con catálogo dinámico, búsqueda, carrito persistente y un checkout de demostración que no procesa pagos ni crea pedidos reales.",
+      "en": "Publicly deployed full-stack application with a dynamic catalog, search, persistent cart, and a safe demonstration checkout that never processes payments or creates real orders."
     },
     "details": {
-      "es": "Una plataforma de comercio electrónico de extremo a extremo construida para alto rendimiento y escalabilidad. Integra una pasarela de pagos con Stripe, gestión relacional con PostgreSQL y Prisma ORM, y una experiencia de usuario fluida con animaciones modernas y filtrado reactivo.",
-      "en": "An end-to-end e-commerce platform built for high performance and scalability. Integrates Stripe payment gateway, relational data modeling with PostgreSQL and Prisma ORM, and a seamless shopping user experience with modern animations and reactive filtering."
+      "es": "LimitLoot es una plataforma de e-commerce construida con Next.js y TypeScript. Incluye catálogo con filtros, carrito persistente, rutas de checkout y arquitectura preparada para Prisma, PostgreSQL, Stripe y Printful. Para uso en portafolio, configuré un modo demo que bloquea cargos, correos, webhooks y órdenes de fulfillment mientras conserva el flujo completo para evaluación.",
+      "en": "LimitLoot is an e-commerce platform built with Next.js and TypeScript. It includes a filtered catalog, persistent cart, checkout routes, and an architecture ready for Prisma, PostgreSQL, Stripe, and Printful. For portfolio use, I configured a demo mode that blocks charges, email, webhooks, and fulfillment orders while keeping the full flow available for evaluation."
     },
     "features": [
       {
-        "es": "Catálogo reactivo con filtrado instantáneo por categoría, precio y disponibilidad.",
-        "en": "Reactive catalog with instantaneous filtering by category, price, and stock."
+        "es": "Catálogo con búsqueda, filtros por categoría y productos de escritorio para developers, gamers y otakus.",
+        "en": "Catalog with search, category filters, and desk products for developers, gamers, and otakus."
       },
       {
-        "es": "Pasarela de pagos segura con Stripe Checkout y manejo de webhooks para confirmación.",
-        "en": "Secure payment gateway with Stripe Checkout and robust webhook processing."
+        "es": "Carrito persistente y flujo de checkout completo para demostrar la experiencia de compra.",
+        "en": "Persistent cart and complete checkout flow to demonstrate the purchase experience."
       },
       {
-        "es": "Persistencia de datos y modelos relacionales optimizados en PostgreSQL mediante Prisma ORM.",
-        "en": "Data persistence and optimized relational models in PostgreSQL powered by Prisma ORM."
+        "es": "Modo de portafolio que simula Stripe y bloquea correos, webhooks y fulfillment para no generar efectos reales.",
+        "en": "Portfolio mode that simulates Stripe and blocks email, webhooks, and fulfillment so no real side effects occur."
       },
       {
-        "es": "Autenticación segura basada en sesiones y protección contra vulnerabilidades frontend/backend.",
-        "en": "Secure session-based authentication with comprehensive frontend/backend security guardrails."
+        "es": "44 pruebas automatizadas cubren las rutas críticas, incluido el bloqueo de pagos reales en modo demo.",
+        "en": "44 automated tests cover critical routes, including the real-payment block in demo mode."
       }
     ],
     "gallery": [
@@ -44,16 +44,23 @@
         }
       },
       {
-        "src": "/assets/images/projects/shop-checkout.jpg",
+        "src": "/assets/images/projects/limitloot-product-art.png",
         "caption": {
-          "es": "Flujo de pago optimizado con integración de Stripe Checkout y pasarela de cobro segura.",
-          "en": "Optimized checkout flow with Stripe Checkout integration and secure payment gateway."
+          "es": "Arte de producto creado para la identidad visual y las colecciones de LimitLoot.",
+          "en": "Product art created for LimitLoot's visual identity and collections."
+        }
+      },
+      {
+        "src": "/assets/images/projects/limitloot-blueprint.png",
+        "caption": {
+          "es": "Propuesta visual para una colección de producto orientada a developers.",
+          "en": "Visual concept for a developer-focused product collection."
         }
       }
     ],
-    "tags": ["Next.js", "React", "Prisma", "PostgreSQL", "Stripe", "Better-Auth", "Tailwind CSS"],
-    "githubUrl": "https://github.com/SEBASTIAN/Shop",
-    "demoUrl": "https://shop.local"
+    "tags": ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "Stripe", "Printful", "Tailwind CSS", "Vitest", "Vercel"],
+    "githubUrl": "https://github.com/AqueosHeart/shop",
+    "demoUrl": "https://shop-umber-theta.vercel.app"
   },
   {
     "id": "work-app",

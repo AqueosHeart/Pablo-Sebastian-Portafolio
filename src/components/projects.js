@@ -52,6 +52,7 @@ export function renderProjects() {
   const projectsHtml = projectsData.map(proj => {
     // Collect unique SVG icon paths for this project
     const icons = [...new Set(proj.tags.map(tag => ICON_MAP[tag] || javascriptIcon))];
+    const publicDemoUrl = /^https?:\/\/(?![^/]+\.local(?:\/|$))/.test(proj.demoUrl || '') ? proj.demoUrl : null;
 
     return `
       <article class="project-showcase-item" data-project-id="${proj.id}">
@@ -91,7 +92,10 @@ export function renderProjects() {
 
         <div class="project-info">
           <h3 class="project-title-text" data-project-id="${proj.id}">${proj.title[currentLang] || proj.title['es']}</h3>
-          <a href="${proj.githubUrl || '#'}" target="_blank" rel="noopener noreferrer" class="project-url-link">${proj.githubUrl}</a>
+          <div class="project-links">
+            ${publicDemoUrl ? `<a href="${publicDemoUrl}" target="_blank" rel="noopener noreferrer" class="project-url-link project-demo-link">${currentLang === 'es' ? 'Ver demo ↗' : 'Live demo ↗'}</a>` : ''}
+            <a href="${proj.githubUrl || '#'}" target="_blank" rel="noopener noreferrer" class="project-url-link">${currentLang === 'es' ? 'Código ↗' : 'Source ↗'}</a>
+          </div>
           
           <!-- Stack represented by PURE WHITE ICONS ONLY (No text, labels, or pill borders) -->
           <div class="project-pure-icons-stack">
@@ -143,8 +147,8 @@ export function bindProjectsEvents(container, onFilterChange) {
   });
 
   // Ensure direct GitHub link click does not trigger modal opening
-  const githubLinks = container.querySelectorAll('.project-url-link');
-  githubLinks.forEach(link => {
+  const projectLinks = container.querySelectorAll('.project-url-link');
+  projectLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       e.stopPropagation();
     });

@@ -26,9 +26,13 @@ describe('Project Modal Component', () => {
     expect(titleEl).not.toBeNull();
     expect(titleEl.textContent).toContain(testProject.title[currentLang]);
 
-    const githubLink = modalRoot.querySelector('.project-modal-github-link');
+    const githubLink = modalRoot.querySelector('.project-modal-source-link');
     expect(githubLink).not.toBeNull();
     expect(githubLink.getAttribute('href')).toBe(testProject.githubUrl);
+
+    const demoLink = modalRoot.querySelector('.project-modal-demo-link');
+    expect(demoLink).not.toBeNull();
+    expect(demoLink.getAttribute('href')).toBe(testProject.demoUrl);
 
     const textPanel = modalRoot.querySelector('.project-modal-text-panel');
     expect(textPanel).not.toBeNull();

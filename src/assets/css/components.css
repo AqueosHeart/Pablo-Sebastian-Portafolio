@@ -712,6 +712,12 @@
   color: var(--accent-lavender);
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .project-url-link {
   font-family: var(--font-family-mono);
   font-size: 0.875rem;
@@ -722,6 +728,11 @@
 }
 
 .project-url-link:hover {
+  color: var(--accent-lavender);
+}
+
+.project-demo-link,
+.project-modal-demo-link {
   color: var(--accent-lavender);
 }
 
