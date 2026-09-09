@@ -1,5 +1,6 @@
 import { renderHeader, bindHeaderEvents } from './components/header.js';
 import { renderHero, bindHeroEvents } from './components/hero.js';
+import { renderAbout } from './components/about.js';
 import { renderProjects, bindProjectsEvents } from './components/projects.js';
 import { renderSkills } from './components/skills.js';
 import { renderContact, bindContactEvents } from './components/contact.js';
@@ -12,6 +13,7 @@ function mountApp() {
     ${renderHeader()}
     <main>
       ${renderHero()}
+      ${renderAbout()}
       ${renderProjects()}
       ${renderSkills()}
       ${renderContact()}
@@ -45,4 +47,3 @@ if (document.readyState === 'loading') {
 } else {
   mountApp();
 }
-

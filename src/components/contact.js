@@ -77,7 +77,16 @@ export function bindContactEvents(container) {
       submitBtn.style.opacity = '0.7';
 
       const formData = new FormData(form);
-      const apiKey = import.meta.env.VITE_WEB3FORMS_KEY || '763ae6e3-3154-44c6-bd5f-42f475269df6';
+      const apiKey = import.meta.env.VITE_WEB3FORMS_KEY;
+      if (!apiKey) {
+        statusDiv.style.display = 'block';
+        statusDiv.style.color = '#ffb4b4';
+        statusDiv.textContent = i18n.t('contact.config_error');
+        submitBtn.disabled = false;
+        submitBtn.style.opacity = '1';
+        if (submitTextSpan) submitTextSpan.textContent = originalText;
+        return;
+      }
       formData.append('access_key', apiKey);
       formData.append('subject', 'Nuevo mensaje de contacto desde Portafolio');
 
@@ -101,9 +110,8 @@ export function bindContactEvents(container) {
         }
       } catch (error) {
         statusDiv.style.display = 'block';
-        statusDiv.style.color = 'var(--accent-sage)';
-        statusDiv.textContent = i18n.t('contact.success_msg');
-        form.reset();
+        statusDiv.style.color = '#ffb4b4';
+        statusDiv.textContent = i18n.t('contact.error_msg');
       } finally {
         if (submitTextSpan) submitTextSpan.textContent = originalText;
         submitBtn.disabled = false;

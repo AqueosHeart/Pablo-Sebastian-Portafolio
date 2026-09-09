@@ -203,7 +203,8 @@ function renderActiveModal() {
   const currentGalleryItem = gallery[currentSlideIndex] || gallery[0];
   const currentCaption = (currentGalleryItem.caption && (currentGalleryItem.caption[currentLang] || currentGalleryItem.caption['es'])) || '';
   const totalSlides = gallery.length;
-  const publicDemoUrl = /^https?:\/\/(?![^/]+\.local(?:\/|$))/.test(project.demoUrl || '') ? project.demoUrl : null;
+  const hasPublicDemo = typeof project.demoUrl === 'string' && /^https:\/\//i.test(project.demoUrl) && !project.demoUrl.includes('.local');
+  const hasPublicSource = typeof project.githubUrl === 'string' && /^https:\/\//i.test(project.githubUrl);
 
   const modalHtml = `
     <div class="project-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
@@ -217,19 +218,20 @@ function renderActiveModal() {
           <div class="project-modal-title-group">
             <h2 id="modal-project-title" class="project-modal-title">${title}</h2>
             
-            <!-- Project links below title -->
+            <!-- GitHub Link below Title -->
             <div class="project-modal-links-bar">
-              ${publicDemoUrl ? `
-                <a href="${publicDemoUrl}" target="_blank" rel="noopener noreferrer" class="project-modal-github-link project-modal-demo-link">
-                  <span>${currentLang === 'es' ? 'Ver demo ↗' : 'Live demo ↗'}</span>
-                </a>
-              ` : ''}
-              ${project.githubUrl ? `
-                <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="project-modal-github-link project-modal-source-link">
-                  <svg class="project-modal-link-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              ${hasPublicSource ? `<a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="project-modal-github-link">
+                <svg class="project-modal-link-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>${i18n.t('projects.modal_view_github')}</span>
+              </a>` : ''}
+              ${hasPublicDemo ? `
+                <a href="${project.demoUrl}" target="_blank" rel="noopener noreferrer" class="project-modal-demo-link">
+                  <svg class="project-modal-link-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 3h7v7"></path><path d="M10 14 21 3"></path><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"></path>
                   </svg>
-                  <span>${currentLang === 'es' ? 'Código fuente' : 'Source code'}</span>
+                  <span>${i18n.t('projects.modal_view_demo')}</span>
                 </a>
               ` : ''}
             </div>
@@ -253,6 +255,14 @@ function renderActiveModal() {
             <div class="project-modal-panel-block">
               <p class="project-modal-description-paragraph">${details}</p>
             </div>
+
+            ${project.caseStudy ? `
+              <dl class="project-case-study">
+                <div><dt>${i18n.t('projects.case_role')}</dt><dd>${project.caseStudy.role[currentLang] || project.caseStudy.role.es}</dd></div>
+                <div><dt>${i18n.t('projects.case_challenge')}</dt><dd>${project.caseStudy.challenge[currentLang] || project.caseStudy.challenge.es}</dd></div>
+                <div><dt>${i18n.t('projects.case_result')}</dt><dd>${project.caseStudy.result[currentLang] || project.caseStudy.result.es}</dd></div>
+              </dl>
+            ` : ''}
 
             ${features.length > 0 ? `
               <div class="project-modal-panel-block">

@@ -13,6 +13,7 @@ export function renderHeader() {
         <nav class="nav">
           <ul class="nav-links">
             <li><a href="#hello" class="nav-link active">${i18n.t('nav.home')}</a></li>
+            <li><a href="#about" class="nav-link">${i18n.t('nav.about')}</a></li>
             <li><a href="#projects" class="nav-link">${i18n.t('nav.projects')}</a></li>
             <li><a href="#skills" class="nav-link">${i18n.t('nav.skills')}</a></li>
             <li><a href="#contact" class="nav-link">${i18n.t('nav.contact')}</a></li>

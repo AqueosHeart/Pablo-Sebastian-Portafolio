@@ -17,6 +17,11 @@
       "es": "LimitLoot es una plataforma de e-commerce construida con Next.js y TypeScript. Incluye catálogo con filtros, carrito persistente, rutas de checkout y arquitectura preparada para Prisma, PostgreSQL, Stripe y Printful. Para uso en portafolio, configuré un modo demo que bloquea cargos, correos, webhooks y órdenes de fulfillment mientras conserva el flujo completo para evaluación.",
       "en": "LimitLoot is an e-commerce platform built with Next.js and TypeScript. It includes a filtered catalog, persistent cart, checkout routes, and an architecture ready for Prisma, PostgreSQL, Stripe, and Printful. For portfolio use, I configured a demo mode that blocks charges, email, webhooks, and fulfillment orders while keeping the full flow available for evaluation."
     },
+    "caseStudy": {
+      "role": {"es": "Diseño y desarrollo full-stack del flujo de compra.", "en": "Full-stack design and development of the purchasing flow."},
+      "challenge": {"es": "Conectar catálogo, carrito, autenticación y pagos sin presentar transacciones de demostración como pedidos reales.", "en": "Connect catalog, cart, authentication, and payments without presenting demo transactions as real orders."},
+      "result": {"es": "Demo pública con 12 productos, navegación de catálogo y flujo de compra simulado claramente identificado.", "en": "Public demo with 12 products, catalog navigation, and a clearly identified simulated purchasing flow."}
+    },
     "features": [
       {
         "es": "Catálogo con búsqueda, filtros por categoría y productos de escritorio para developers, gamers y otakus.",
@@ -59,64 +64,8 @@
       }
     ],
     "tags": ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "Stripe", "Printful", "Tailwind CSS", "Vitest", "Vercel"],
-    "githubUrl": null,
+    "githubUrl": "https://github.com/AqueosHeart/limitloot-demo",
     "demoUrl": "https://shop-umber-theta.vercel.app"
-  },
-  {
-    "id": "work-app",
-    "category": "web-engineering",
-    "solidColor": "#669ACA",
-    "image": "/assets/images/projects/work.png",
-    "title": {
-      "es": "Interactive Work Application",
-      "en": "Interactive Work Application"
-    },
-    "subtitle": "Aplicación web de alto rendimiento con sistema de diseño modular e integración de correos.",
-    "summary": {
-      "es": "Plataforma web React & Vite optimizada con componentes de interfaz responsivos, arquitectura limpia y servicio backend para envío automatizado de correo.",
-      "en": "Optimized React & Vite web platform featuring responsive UI components, clean architecture, and an automated backend email dispatch service."
-    },
-    "details": {
-      "es": "Plataforma web modular de productividad empresarial enfocada en una experiencia de usuario rápida y sin fricción. Diseñada con micro-interacciones pulidas, cola de despacho de notificaciones y diseño glassmórfico de alto impacto visual.",
-      "en": "Modular enterprise productivity web platform focused on ultra-fast, frictionless user experience. Designed with polished micro-interactions, automated notification dispatch queues, and high-impact glassmorphic visual aesthetics."
-    },
-    "features": [
-      {
-        "es": "Arquitectura basada en componentes atómicos reutilizables con Tailwind CSS.",
-        "en": "Atomic component-driven architecture built for reuse with Tailwind CSS."
-      },
-      {
-        "es": "Motor de automatización y despacho de correos electrónicos con cola de reintentos.",
-        "en": "Email automation and dispatch engine with intelligent retry queue handling."
-      },
-      {
-        "es": "Monitoreo en tiempo real de telemetría de servicio y rendimiento de campañas.",
-        "en": "Real-time service telemetry monitoring and campaign performance analytics."
-      },
-      {
-        "es": "Soporte completo para temas oscuros y adaptabilidad multidispositivo impecable.",
-        "en": "Full dark theme support with flawless multi-device responsiveness."
-      }
-    ],
-    "gallery": [
-      {
-        "src": "/assets/images/projects/work.png",
-        "caption": {
-          "es": "Panel de control principal e interfaz interactiva del espacio de trabajo.",
-          "en": "Main workspace dashboard and interactive productivity interface."
-        }
-      },
-      {
-        "src": "/assets/images/projects/work-automation.jpg",
-        "caption": {
-          "es": "Módulo de automatización de correos electrónicos y telemetría de colas de mensajes.",
-          "en": "Email dispatch automation module and message queue telemetry logs."
-        }
-      }
-    ],
-    "tags": ["React", "Vite", "Tailwind CSS", "Lucide Icons", "Python Automation"],
-    "githubUrl": "https://github.com/SEBASTIAN/work",
-    "demoUrl": "https://work.local"
   },
   {
     "id": "creator-os",
@@ -124,73 +73,76 @@
     "solidColor": "#e17055",
     "image": "/assets/images/projects/creator-os.png",
     "title": {
-      "es": "Creator OS Platform",
-      "en": "Creator OS Platform"
+      "es": "Creator OS Scripts",
+      "en": "Creator OS Scripts"
     },
-    "subtitle": "Sistema operativo de contenido con investigación profunda e IA para guiones y SEO.",
+    "subtitle": "Colección de scripts Python para transcripción, subtítulos y procesamiento de video.",
     "summary": {
-      "es": "Sistema operativo de creación de contenido para gestión de ideas, investigación automatizada, generación de guiones y flujo de optimización SEO multimodal.",
-      "en": "Comprehensive content creation operating system for idea management, automated deep research, script generation, and multimodal SEO optimization workflows."
+      "es": "Herramientas Python para transcribir audio, generar subtítulos y ejecutar trabajos de procesamiento audiovisual.",
+      "en": "Python utilities for audio transcription, subtitle generation, and audiovisual processing jobs."
     },
     "details": {
-      "es": "Solución integral para creadores y equipos de medios que transforma ideas crudas en contenido estructurado de alto rendimiento. Incorpora flujos de investigación profunda con LLMs, análisis semántico SEO y un estudio visual de guionizado nodo por nodo.",
-      "en": "All-in-one workstation for creators and media teams transforming raw ideas into high-performing structured content. Incorporates automated deep research pipelines, multimodal SEO semantic analysis, and node-based script structuring."
+      "es": "Conjunto de scripts y módulos backend creados para automatizar tareas concretas de edición: transcripción con Whisper, creación y estilo de subtítulos, almacenamiento de trabajos y pruebas automatizadas.",
+      "en": "A collection of scripts and backend modules for focused editing automation: Whisper transcription, subtitle generation and styling, job storage, and automated tests."
+    },
+    "caseStudy": {
+      "role": {"es": "Desarrollo de utilidades backend y automatizaciones audiovisuales.", "en": "Development of backend utilities and audiovisual automation."},
+      "challenge": {"es": "Convertir tareas manuales de transcripción y subtitulado en procesos repetibles.", "en": "Turn manual transcription and captioning tasks into repeatable processes."},
+      "result": {"es": "Colección funcional de módulos para Whisper, FFmpeg, estilos de subtítulos, trabajos persistentes y pruebas.", "en": "Functional module collection for Whisper, FFmpeg, caption styling, persistent jobs, and tests."}
     },
     "features": [
       {
-        "es": "Espacio de investigación profunda con agregación automática de fuentes y síntesis con IA.",
-        "en": "Deep research workspace with automated source aggregation and AI synthesis."
+        "es": "Transcripción local de audio y video mediante Whisper.",
+        "en": "Local audio and video transcription with Whisper."
       },
       {
-        "es": "Generador de guiones visual estructurado en nodos y actos narrativos.",
-        "en": "Visual node-based script generator structured by narrative acts and key hooks."
+        "es": "Generación, formato y estilos reutilizables para subtítulos.",
+        "en": "Reusable subtitle generation, formatting, and styles."
       },
       {
-        "es": "Análisis y optimización SEO multimodal para maximizar el alcance del contenido.",
-        "en": "Multimodal SEO analyzer and optimization engine to maximize content reach."
+        "es": "Ejecución y almacenamiento de trabajos de procesamiento.",
+        "en": "Processing job execution and storage."
       },
       {
-        "es": "Validación estricta de esquemas de datos con TypeScript y Zod.",
-        "en": "Strict end-to-end data schema validation powered by TypeScript and Zod."
+        "es": "Pruebas automatizadas para subtítulos, estilos y persistencia de trabajos.",
+        "en": "Automated tests for subtitles, styles, and job persistence."
       }
     ],
     "gallery": [
       {
         "src": "/assets/images/projects/creator-os.png",
         "caption": {
-          "es": "Tablero general de Creator OS con gestión de ideas y biblioteca de contenido.",
-          "en": "Creator OS main hub with idea pipeline management and content repository."
-        }
-      },
-      {
-        "src": "/assets/images/projects/creator-research.jpg",
-        "caption": {
-          "es": "Espacio de trabajo de investigación profunda y generador de guiones con IA estructurado en nodos.",
-          "en": "Deep research workspace and AI script generator with node-based narrative progression."
+          "es": "Identidad visual del conjunto de herramientas Python Creator OS.",
+          "en": "Visual identity for the Creator OS Python tool collection."
         }
       }
     ],
-    "tags": ["Next.js", "React", "TypeScript", "Prisma", "Zod", "Multimodal SEO"],
-    "githubUrl": "https://github.com/SEBASTIAN/Work2",
+    "tags": ["Python", "Whisper", "FFmpeg", "Automation"],
+    "githubUrl": null,
     "demoUrl": "https://creator-os.local"
   },
   {
     "id": "aarc-auth",
     "category": "architecture",
     "solidColor": "#97C594",
-    "image": "/assets/images/projects/aarc-auth.png",
+    "image": "/assets/images/projects/aarc-real/portal.png",
     "title": {
-      "es": "AARC Auth & Admin System",
-      "en": "AARC Auth & Admin System"
+      "es": "AARC ERP",
+      "en": "AARC ERP"
     },
-    "subtitle": "Portal de administración empresarial con tablas dinámicas, códigos QR y exportación de datos.",
+    "subtitle": "ERP empresarial para empleados, credenciales, inventario, vacaciones, catálogos y control de acceso.",
     "summary": {
-      "es": "Portal de autenticación y gestión empresarial con tablas dinámicas drag-and-drop, generación de códigos QR, exportación a PDF/Excel y control de acceso basado en roles.",
-      "en": "Enterprise authentication & admin management portal featuring dynamic drag-and-drop tables, QR code generation, PDF/Excel data export, and role-based access control."
+      "es": "Sistema ERP modular con expedientes de empleados, credenciales, inventario, vacaciones, catálogos operativos y administración RBAC.",
+      "en": "Modular ERP covering employee records, credentials, inventory, vacations, operational catalogs, and RBAC administration."
     },
     "details": {
-      "es": "Sistema administrativo y de control de acceso corporativo de misión crítica. Integra autenticación moderna con Better-Auth, tablas dinámicas con TanStack Table, asignación granular de permisos RBAC, generación por lotes de códigos QR y motor de exportación a documentos PDF y hojas Excel.",
-      "en": "Mission-critical corporate administration and access control suite. Integrates modern authentication via Better-Auth, interactive data tables with TanStack Table, granular RBAC permission matrix, batch QR code generation, and direct PDF/Excel export engines."
+      "es": "Aplicación operativa construida en Next.js que centraliza procesos internos de recursos humanos y administración. La demo pública conserva las pantallas y flujos reales del proyecto, utiliza únicamente registros ficticios y funciona en modo de solo lectura, sin conexión con producción.",
+      "en": "A Next.js operations application that centralizes HR and administrative workflows. The public demo preserves the project's real screens and flows, uses fictional records only, and runs read-only without any production connection."
+    },
+    "caseStudy": {
+      "role": {"es": "Arquitectura y desarrollo de flujos administrativos full-stack.", "en": "Architecture and development of full-stack administrative workflows."},
+      "challenge": {"es": "Centralizar empleados, accesos y operaciones internas sin exponer información de producción.", "en": "Centralize employees, access, and internal operations without exposing production information."},
+      "result": {"es": "Demo pública aislada con 6 empleados ficticios, acceso por rol y módulos navegables de empleados, credenciales y exportación.", "en": "Isolated public demo with 6 fictional employees, role-based access, and navigable employee, credential, and export modules."}
     },
     "features": [
       {
@@ -212,36 +164,36 @@
     ],
     "gallery": [
       {
-        "src": "/assets/images/projects/aarc-auth.png",
+        "src": "/assets/images/projects/aarc-real/portal.png",
         "caption": {
-          "es": "Pantalla de inicio de sesión y autenticación segura con Better-Auth y control de acceso.",
-          "en": "Secure authentication and login portal with Better-Auth and access control."
+          "es": "Portal operativo real con métricas de empleados y accesos rápidos a los módulos del ERP.",
+          "en": "Real operations portal with employee metrics and shortcuts to the ERP modules."
         }
       },
       {
-        "src": "/assets/images/projects/aarc-table.jpg",
+        "src": "/assets/images/projects/aarc-real/employees.png",
         "caption": {
-          "es": "Panel de gestión de usuarios y control de acceso granular basado en roles (RBAC).",
-          "en": "User management dashboard with granular Role-Based Access Control (RBAC)."
+          "es": "Gestión de empleados con filtros, catálogos y registros ficticios servidos por la demo.",
+          "en": "Employee management with filters, catalogs, and fictional records served by the demo."
         }
       },
       {
-        "src": "/assets/images/projects/aarc-qr-export.jpg",
+        "src": "/assets/images/projects/aarc-real/vacations.png",
         "caption": {
-          "es": "Generador de códigos QR por lotes y centro de exportación de reportes PDF/Excel.",
-          "en": "Batch QR code studio with live preview and PDF/Excel report export module."
+          "es": "Calendario de vacaciones, alertas de vencimiento y métricas con datos de demostración.",
+          "en": "Vacation calendar, expiration alerts, and metrics backed by demo data."
         }
       }
     ],
     "tags": ["Next.js", "Drizzle ORM", "MySQL", "Better-Auth", "Shadcn UI", "TanStack Table"],
-    "githubUrl": "https://github.com/SEBASTIAN/sistemas-1",
-    "demoUrl": "https://aarc-auth.local"
+    "githubUrl": "https://github.com/AqueosHeart/aarc-erp-demo",
+    "demoUrl": "https://aarc-erp-demo.vercel.app"
   },
   {
     "id": "sayg-automation",
     "category": "web-engineering",
     "solidColor": "#fcb900",
-    "image": "/assets/images/projects/sayg-automation.png",
+    "image": "/assets/images/projects/sayg-real/bulk-upload.png",
     "title": {
       "es": "SayG Document Automation",
       "en": "SayG Document Automation"
@@ -252,8 +204,13 @@
       "en": "Automated Python & Playwright suite for bulk downloading, analyzing producer records, web scraping, and automated file ingestion workflows."
     },
     "details": {
-      "es": "Herramienta de automatización y scraping de alto volumen para agilizar la gestión de expedientes agrícolas y de productores. Utiliza Playwright para navegación autónoma en portales web, extracción inteligente de información y sincronización continua en la nube.",
-      "en": "High-volume web scraping and automation pipeline designed to streamline document workflows. Leverages Playwright for autonomous portal navigation, structured data extraction, and reliable mass cloud storage synchronization."
+      "es": "Herramienta local con panel Flask para operar scripts Python y Playwright que descargan, validan, organizan y cargan expedientes. También incluye descarga de CURP, análisis documental y construcción de expedientes PDF unificados.",
+      "en": "A local Flask dashboard for operating Python and Playwright scripts that download, validate, organize, and upload records. It also includes CURP downloads, document analysis, and unified PDF record assembly."
+    },
+    "caseStudy": {
+      "role": {"es": "Diseño del panel local y automatización de procesos documentales.", "en": "Local dashboard design and document workflow automation."},
+      "challenge": {"es": "Coordinar descargas, validación, organización y carga de expedientes con fallos recuperables.", "en": "Coordinate record downloads, validation, organization, and uploads with recoverable failures."},
+      "result": {"es": "Panel operativo que ejecuta procesos, transmite su salida y construye expedientes PDF unificados.", "en": "Operational dashboard that runs processes, streams their output, and builds unified PDF records."}
     },
     "features": [
       {
@@ -265,8 +222,8 @@
         "en": "Fault-tolerant bulk file processing and validation pipeline."
       },
       {
-        "es": "Panel de monitoreo con estadísticas de scraping en tiempo real y tasa de éxito del 99.8%.",
-        "en": "Live telemetry dashboard tracking scraping rates, worker status, and 99.8% success rates."
+        "es": "Panel local que muestra el estado de cada proceso y transmite su salida de terminal.",
+        "en": "Local dashboard showing each process state and streaming its terminal output."
       },
       {
         "es": "Mapeo automático de campos y subida estructurada a servidores de destino.",
@@ -275,22 +232,22 @@
     ],
     "gallery": [
       {
-        "src": "/assets/images/projects/sayg-automation.png",
+        "src": "/assets/images/projects/sayg-real/bulk-upload.png",
         "caption": {
-          "es": "Consola principal de automatización y control de tareas programadas en Python.",
-          "en": "Main Python automation console and scheduled background task manager."
+          "es": "Panel real de subida masiva de expedientes, capturado desde la aplicación local.",
+          "en": "Real bulk record-upload panel captured from the local application."
         }
       },
       {
-        "src": "/assets/images/projects/sayg-pipeline.jpg",
+        "src": "/assets/images/projects/sayg-real/unified-expediente.png",
         "caption": {
-          "es": "Pipeline de scraping de archivos con Playwright, métricas en vivo y logs de trabajadores.",
-          "en": "Playwright file scraping pipeline with live throughput metrics and worker logs."
+          "es": "Constructor real de expediente PDF unificado con orden y estado de documentos.",
+          "en": "Real unified PDF record builder with document order and processing status."
         }
       }
     ],
     "tags": ["Python", "Playwright", "Web Scraping", "Data Extraction", "Automation"],
-    "githubUrl": "https://github.com/SEBASTIAN/SayG-programa-subir-archivos",
+    "githubUrl": null,
     "demoUrl": "https://sayg.local"
   }
 ]

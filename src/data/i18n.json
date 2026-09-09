@@ -12,7 +12,21 @@
       "name": "Pablo Sebastian",
       "main_h1": "¡Hola! Soy Pablo Sebastián,<br>Ingeniero de Software y<br><span class=\"hero-title-accent\">Desarrollador Full-Stack</span>",
       "subtitle": "Especializado en arquitectura limpia, plataformas de comercio electrónico, sistemas empresariales de administración, automatización de datos en Python y aplicaciones web de alto rendimiento.",
+      "availability": "Disponible para oportunidades de Ingeniería de Software y Full-Stack",
+      "view_work": "Ver proyectos",
+      "contact": "Contactarme",
       "emblem": "PABLO sebastian • PORTAFOLIO 2026 • DEV •"
+    },
+    "about": {
+      "eyebrow": "INGENIERÍA CON EVIDENCIA",
+      "title": "Construyo productos completos, no solo interfaces.",
+      "copy": "Soy Pablo Sebastián, ingeniero de software full-stack. Diseño experiencias web, modelos de datos y automatizaciones que resuelven flujos operativos reales. Este portafolio muestra demos seguras, capturas auténticas y decisiones técnicas verificables.",
+      "proof_product_title": "Producto full-stack",
+      "proof_product_copy": "Frontend, backend, autenticación, datos, pagos y despliegue.",
+      "proof_automation_title": "Automatización real",
+      "proof_automation_copy": "Procesamiento documental y operaciones repetibles con Python y Playwright.",
+      "proof_quality_title": "Calidad verificable",
+      "proof_quality_copy": "Pruebas automatizadas, demos aisladas y comunicación técnica bilingüe."
     },
     "ticker": [
       "Arquitectura de Software",
@@ -40,7 +54,10 @@
       "modal_close": "Cerrar ventana",
       "modal_prev_img": "Captura anterior",
       "modal_next_img": "Siguiente captura",
-      "modal_image_counter": "Captura {current} de {total}"
+      "modal_image_counter": "Captura {current} de {total}",
+      "case_role": "Mi responsabilidad",
+      "case_challenge": "Reto",
+      "case_result": "Resultado verificable"
     },
     "skills": {
       "title": "Habilidades & Dominio Técnico",
@@ -57,7 +74,9 @@
       "email_label": "Correo Electrónico",
       "message_label": "Mensaje",
       "send_btn": "Enviar Mensaje",
-      "success_msg": "¡Gracias por tu mensaje! Me pondré en contacto contigo muy pronto."
+      "success_msg": "¡Gracias por tu mensaje! Me pondré en contacto contigo muy pronto.",
+      "error_msg": "No se pudo enviar el mensaje. Inténtalo nuevamente o contáctame mediante GitHub.",
+      "config_error": "El formulario no está disponible temporalmente. Contáctame mediante GitHub."
     },
     "footer": {
       "text": "© 2026 Pablo sebastian • Portafolio de Ingeniería de Software."
@@ -76,7 +95,21 @@
       "name": "Pablo sebastian",
       "main_h1": "Hi! I'm Pablo Sebastián,<br>Software Engineer &amp;<br><span class=\"hero-title-accent\">Full-Stack Developer</span>",
       "subtitle": "Specialized in clean architecture, e-commerce platforms, enterprise admin systems, Python data automation, and high-performance web applications.",
+      "availability": "Available for Software Engineering and Full-Stack opportunities",
+      "view_work": "View projects",
+      "contact": "Contact me",
       "emblem": "PABLO sebastian • PORTFOLIO 2026 • DEV •"
+    },
+    "about": {
+      "eyebrow": "ENGINEERING WITH EVIDENCE",
+      "title": "I build complete products, not just interfaces.",
+      "copy": "I'm Pablo Sebastián, a full-stack software engineer. I design web experiences, data models, and automation that solve real operational workflows. This portfolio presents safe demos, authentic captures, and verifiable technical decisions.",
+      "proof_product_title": "Full-stack product",
+      "proof_product_copy": "Frontend, backend, authentication, data, payments, and deployment.",
+      "proof_automation_title": "Real automation",
+      "proof_automation_copy": "Document processing and repeatable operations with Python and Playwright.",
+      "proof_quality_title": "Verifiable quality",
+      "proof_quality_copy": "Automated tests, isolated demos, and bilingual technical communication."
     },
     "ticker": [
       "Software Architecture",
@@ -104,7 +137,10 @@
       "modal_close": "Close modal",
       "modal_prev_img": "Previous screenshot",
       "modal_next_img": "Next screenshot",
-      "modal_image_counter": "Screenshot {current} of {total}"
+      "modal_image_counter": "Screenshot {current} of {total}",
+      "case_role": "My responsibility",
+      "case_challenge": "Challenge",
+      "case_result": "Verifiable result"
     },
     "skills": {
       "title": "Skills & Technical Expertise",
@@ -121,7 +157,9 @@
       "email_label": "Email Address",
       "message_label": "Message",
       "send_btn": "Send Message",
-      "success_msg": "Thank you for reaching out! I will get back to you shortly."
+      "success_msg": "Thank you for reaching out! I will get back to you shortly.",
+      "error_msg": "The message could not be sent. Please try again or contact me through GitHub.",
+      "config_error": "The contact form is temporarily unavailable. Please contact me through GitHub."
     },
     "footer": {
       "text": "© 2026 Pablo sebastian • Software Engineering"

@@ -42,9 +42,14 @@ const ICON_MAP = {
   'Automation': dockerIcon,
   'Lucide Icons': reactIcon,
   'Python Automation': pythonIcon,
+  'Whisper': pythonIcon,
+  'FFmpeg': pythonIcon,
   'Playwright': dockerIcon,
   'Zod': tsIcon
 };
+
+const isPublicDemoUrl = (url) => typeof url === 'string' && /^https:\/\//i.test(url) && !url.includes('.local');
+const isPublicSourceUrl = (url) => typeof url === 'string' && /^https:\/\//i.test(url);
 
 export function renderProjects() {
   const currentLang = i18n.getLanguage();
@@ -52,7 +57,6 @@ export function renderProjects() {
   const projectsHtml = projectsData.map(proj => {
     // Collect unique SVG icon paths for this project
     const icons = [...new Set(proj.tags.map(tag => ICON_MAP[tag] || javascriptIcon))];
-    const publicDemoUrl = /^https?:\/\/(?![^/]+\.local(?:\/|$))/.test(proj.demoUrl || '') ? proj.demoUrl : null;
 
     return `
       <article class="project-showcase-item" data-project-id="${proj.id}">
@@ -92,15 +96,13 @@ export function renderProjects() {
 
         <div class="project-info">
           <h3 class="project-title-text" data-project-id="${proj.id}">${proj.title[currentLang] || proj.title['es']}</h3>
-          <div class="project-links">
-            ${publicDemoUrl ? `<a href="${publicDemoUrl}" target="_blank" rel="noopener noreferrer" class="project-url-link project-demo-link">${currentLang === 'es' ? 'Ver demo ↗' : 'Live demo ↗'}</a>` : ''}
-            ${proj.githubUrl ? `<a href="${proj.githubUrl}" target="_blank" rel="noopener noreferrer" class="project-url-link">${currentLang === 'es' ? 'Código ↗' : 'Source ↗'}</a>` : ''}
-          </div>
+          ${isPublicSourceUrl(proj.githubUrl) ? `<a href="${proj.githubUrl}" target="_blank" rel="noopener noreferrer" class="project-url-link">${i18n.t('projects.view_code')}</a>` : ''}
+          ${isPublicDemoUrl(proj.demoUrl) ? `<a href="${proj.demoUrl}" target="_blank" rel="noopener noreferrer" class="project-live-link">${i18n.t('projects.view_demo')}</a>` : ''}
           
           <!-- Stack represented by PURE WHITE ICONS ONLY (No text, labels, or pill borders) -->
           <div class="project-pure-icons-stack">
             ${icons.map(iconSrc => `
-              <img src="${iconSrc}" alt="Tech Icon" class="project-pure-tech-icon" />
+              <img src="${iconSrc}" alt="" aria-hidden="true" class="project-pure-tech-icon" />
             `).join('')}
           </div>
         </div>
@@ -147,8 +149,8 @@ export function bindProjectsEvents(container, onFilterChange) {
   });
 
   // Ensure direct GitHub link click does not trigger modal opening
-  const projectLinks = container.querySelectorAll('.project-url-link');
-  projectLinks.forEach(link => {
+  const directLinks = container.querySelectorAll('.project-url-link, .project-live-link');
+  directLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       e.stopPropagation();
     });

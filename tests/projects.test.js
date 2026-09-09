@@ -34,6 +34,15 @@ describe('Projects Data', () => {
           expect(feat).toHaveProperty('en');
         });
       }
+
+      expect(proj.caseStudy).toBeDefined();
+      for (const key of ['role', 'challenge', 'result']) {
+        expect(proj.caseStudy[key]).toHaveProperty('es');
+        expect(proj.caseStudy[key]).toHaveProperty('en');
+      }
+      if (proj.githubUrl !== null) {
+        expect(proj.githubUrl).toMatch(/^https:\/\/github\.com\/AqueosHeart\//);
+      }
     });
   });
 
@@ -42,7 +51,7 @@ describe('Projects Data', () => {
 
     expect(shop).toBeDefined();
     expect(shop.demoUrl).toBe('https://shop-umber-theta.vercel.app');
-    expect(shop.githubUrl).toBeNull();
+    expect(shop.githubUrl).toBe('https://github.com/AqueosHeart/limitloot-demo');
     expect(shop.gallery).toHaveLength(3);
     expect(shop.gallery.map(item => item.src)).toEqual([
       '/assets/images/projects/limitloot-home.png',

@@ -712,12 +712,6 @@
   color: var(--accent-lavender);
 }
 
-.project-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
 .project-url-link {
   font-family: var(--font-family-mono);
   font-size: 0.875rem;
@@ -731,9 +725,22 @@
   color: var(--accent-lavender);
 }
 
-.project-demo-link,
-.project-modal-demo-link {
-  color: var(--accent-lavender);
+.project-live-link {
+  display: inline-flex;
+  width: fit-content;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #0a0a0a;
+  background: #ffffff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform var(--transition-fast), background var(--transition-fast);
+}
+
+.project-live-link:hover {
+  transform: translateY(-2px);
+  background: var(--accent-lavender);
 }
 
 /* Pure Tech SVG Icons Stack (No Text, No Labels, No Pill Backgrounds) */
@@ -1089,6 +1096,104 @@ body.modal-open {
 
 .project-modal-github-link:hover {
   color: #ffffff;
+}
+
+.project-modal-demo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #090909;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-decoration: none;
+  pointer-events: auto;
+}
+
+.project-modal-demo-link:hover {
+  background: var(--accent-lavender);
+}
+
+/* Recruiter-facing proof and case-study layer */
+.hero-availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+  padding: 8px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.28);
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 650;
+}
+
+.availability-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #8de6a4;
+  box-shadow: 0 0 0 5px rgba(141, 230, 164, 0.14);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.hero-primary-btn,
+.hero-secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 17px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.hero-primary-btn { background: #fff; color: #080808; }
+.hero-secondary-btn { border: 1px solid rgba(255, 255, 255, 0.34); background: rgba(0, 0, 0, 0.25); color: #fff; }
+.hero-primary-btn:hover, .hero-secondary-btn:hover { transform: translateY(-2px); }
+
+.about-section { padding: 110px 0 40px; }
+.about-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 64px; align-items: start; }
+.section-eyebrow { margin-bottom: 14px; color: var(--accent-sage); font: 750 0.76rem/1.2 var(--font-mono); letter-spacing: 0.14em; }
+.about-copy { max-width: 560px; color: var(--text-secondary); font-size: 1.08rem; }
+.about-proof-grid { display: grid; gap: 12px; }
+.about-proof-card { display: grid; grid-template-columns: 42px 0.8fr 1.2fr; gap: 18px; align-items: baseline; padding: 22px; border: 1px solid var(--border-color); border-radius: 18px; background: rgba(255,255,255,0.035); }
+.about-proof-card span { color: var(--accent-lavender); font-family: var(--font-mono); font-size: 0.8rem; }
+.about-proof-card h3 { font-size: 1rem; }
+.about-proof-card p { color: var(--text-secondary); font-size: 0.9rem; }
+
+.project-case-study { display: grid; gap: 10px; }
+.project-case-study > div { padding: 13px 14px; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; background: rgba(255,255,255,0.045); }
+.project-case-study dt { margin-bottom: 4px; color: var(--accent-sage); font: 750 0.72rem/1.2 var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; }
+.project-case-study dd { color: rgba(255,255,255,0.86); font-size: 0.88rem; line-height: 1.5; }
+
+@media (max-width: 900px) {
+  .about-grid { grid-template-columns: 1fr; gap: 34px; }
+}
+
+@media (max-width: 680px) {
+  .nav { display: none; }
+  .header-cta-btn { display: none; }
+  .header-outer { padding: 10px 16px; }
+  .logo { font-size: 1rem; }
+  .hero-availability { font-size: 0.76rem; }
+  .about-proof-card { grid-template-columns: 32px 1fr; }
+  .about-proof-card p { grid-column: 2; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
 
 .project-modal-link-icon {

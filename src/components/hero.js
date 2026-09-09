@@ -84,6 +84,17 @@ export function renderHero() {
               ${i18n.t('hero.subtitle')}
             </p>
 
+            <div class="hero-availability" role="status">
+              <span class="availability-dot" aria-hidden="true"></span>
+              ${i18n.t('hero.availability')}
+            </div>
+
+            <div class="hero-actions">
+              <a class="hero-primary-btn" href="#projects">${i18n.t('hero.view_work')}</a>
+              <a class="hero-secondary-btn" href="https://github.com/AqueosHeart" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="hero-secondary-btn" href="#contact">${i18n.t('hero.contact')}</a>
+            </div>
+
           </div>
 
         </div> <!-- /hero-gradient-card -->

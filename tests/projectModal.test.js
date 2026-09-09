@@ -35,6 +35,9 @@ describe('Project Modal Component', () => {
 
     const galleryPanel = modalRoot.querySelector('.project-modal-gallery-panel');
     expect(galleryPanel).not.toBeNull();
+
+    const caseStudy = modalRoot.querySelector('.project-case-study');
+    expect(caseStudy).not.toBeNull();
   });
 
   it('should display image and dynamic caption in the right panel', () => {
@@ -52,6 +55,17 @@ describe('Project Modal Component', () => {
     const captionText = modalRoot.querySelector('.project-modal-caption-text');
     expect(captionText).not.toBeNull();
     expect(captionText.textContent).toBe(aarcProject.gallery[0].caption[currentLang]);
+  });
+
+  it('should expose live demo links for LimitLoot and AARC ERP', () => {
+    for (const projectId of ['shop-ecommerce', 'aarc-auth']) {
+      const project = projectsData.find(p => p.id === projectId);
+      openProjectModal(projectId);
+      const demoLink = document.querySelector('.project-modal-demo-link');
+      expect(demoLink).not.toBeNull();
+      expect(demoLink.getAttribute('href')).toBe(project.demoUrl);
+      closeProjectModal();
+    }
   });
 
   it('should cycle through gallery images and update captions on next/prev', () => {
