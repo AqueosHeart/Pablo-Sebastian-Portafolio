@@ -2,6 +2,10 @@ import { i18n } from '../services/i18n.js';
 
 export function renderHeader() {
   const currentLang = i18n.getLanguage();
+  const resumeFile = currentLang === 'en'
+    ? '/Pablo-Sebastian-Uriarte-Betancourt-CV-English.pdf'
+    : '/Pablo-Sebastian-Uriarte-Betancourt-CV.pdf';
+  const resumeLabel = currentLang === 'en' ? 'Resume' : 'CV';
 
   return `
     <header class="header-outer" id="header-outer">
@@ -22,15 +26,15 @@ export function renderHeader() {
 
         <div class="header-actions">
           <div class="lang-switcher">
-            <button class="lang-btn ${currentLang === 'es' ? 'active' : ''}" data-lang="es">ES</button>
             <button class="lang-btn ${currentLang === 'en' ? 'active' : ''}" data-lang="en">EN</button>
+            <button class="lang-btn ${currentLang === 'es' ? 'active' : ''}" data-lang="es">ES</button>
           </div>
           <a href="#contact" class="header-cta-btn">
             ${i18n.t('nav.contact')}
           </a>
-          <a href="/Pablo-Sebastian-Uriarte-Betancourt-CV.pdf" class="header-resume-btn" download>
+          <a href="${resumeFile}" class="header-resume-btn" download>
             <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17V3Zm-6 16h14v2H5v-2Z"/></svg>
-            CV
+            ${resumeLabel}
           </a>
         </div>
       </div>

@@ -11,11 +11,7 @@ class I18nService {
     if (saved && (saved === 'es' || saved === 'en')) {
       return saved;
     }
-    const browserLang = navigator.language || navigator.userLanguage || '';
-    if (browserLang.toLowerCase().startsWith('en')) {
-      return 'en';
-    }
-    return 'es'; // Default fallback
+    return 'en'; // Default for first-time visitors; the language switcher preserves their choice.
   }
 
   getLanguage() {
