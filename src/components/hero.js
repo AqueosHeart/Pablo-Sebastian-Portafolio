@@ -100,10 +100,6 @@ export function renderHero() {
                 LinkedIn
               </a>
               <a class="hero-secondary-btn" href="#contact">${i18n.t('hero.contact')}</a>
-              <a class="hero-download-btn" href="/Pablo-Sebastian-Uriarte-Betancourt-CV.pdf" download>
-                <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17V3Zm-6 16h14v2H5v-2Z"/></svg>
-                Descargar CV
-              </a>
             </div>
 
           </div>

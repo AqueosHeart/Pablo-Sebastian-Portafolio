@@ -28,6 +28,10 @@ export function renderHeader() {
           <a href="#contact" class="header-cta-btn">
             ${i18n.t('nav.contact')}
           </a>
+          <a href="/Pablo-Sebastian-Uriarte-Betancourt-CV.pdf" class="header-resume-btn" download>
+            <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17V3Zm-6 16h14v2H5v-2Z"/></svg>
+            CV
+          </a>
         </div>
       </div>
     </header>
