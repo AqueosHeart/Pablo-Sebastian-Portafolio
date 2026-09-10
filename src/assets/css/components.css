@@ -1173,6 +1173,25 @@ body.modal-open {
 .about-proof-card h3 { font-size: 1rem; }
 .about-proof-card p { color: var(--text-secondary); font-size: 0.9rem; }
 
+.contact-profile-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: -14px 0 24px;
+}
+
+.contact-profile-links a {
+  padding: 8px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  color: #fff;
+  font-size: 0.86rem;
+  font-weight: 750;
+}
+
+.contact-profile-links a:hover { background: #fff; color: #000; }
+
 .project-case-study { display: grid; gap: 10px; }
 .project-case-study > div { padding: 13px 14px; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; background: rgba(255,255,255,0.045); }
 .project-case-study dt { margin-bottom: 4px; color: var(--accent-sage); font: 750 0.72rem/1.2 var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; }

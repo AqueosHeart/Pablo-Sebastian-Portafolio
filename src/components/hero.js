@@ -92,6 +92,7 @@ export function renderHero() {
             <div class="hero-actions">
               <a class="hero-primary-btn" href="#projects">${i18n.t('hero.view_work')}</a>
               <a class="hero-secondary-btn" href="https://github.com/AqueosHeart" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="hero-secondary-btn" href="https://www.linkedin.com/in/pablo-sebastian-uriarte-betancourt-234abb333" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               <a class="hero-secondary-btn" href="#contact">${i18n.t('hero.contact')}</a>
             </div>
 

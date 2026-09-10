@@ -22,6 +22,11 @@ export function renderContact() {
               ${i18n.t('contact.subtitle')}
             </p>
 
+            <div class="contact-profile-links" aria-label="Professional profiles">
+              <a href="https://www.linkedin.com/in/pablo-sebastian-uriarte-betancourt-234abb333" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://github.com/AqueosHeart" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+
             <form class="contact-form" id="contact-form">
               <div class="form-group">
                 <label for="contact-name">${i18n.t('contact.name_label')}</label>
