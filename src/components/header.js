@@ -14,13 +14,18 @@ export function renderHeader() {
           PORTAFOLIO<span>.</span>
         </a>
 
-        <nav class="nav">
+        <button class="mobile-menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="primary-navigation" aria-label="Primary navigation">
           <ul class="nav-links">
             <li><a href="#hello" class="nav-link active">${i18n.t('nav.home')}</a></li>
             <li><a href="#about" class="nav-link">${i18n.t('nav.about')}</a></li>
             <li><a href="#projects" class="nav-link">${i18n.t('nav.projects')}</a></li>
             <li><a href="#skills" class="nav-link">${i18n.t('nav.skills')}</a></li>
             <li><a href="#contact" class="nav-link">${i18n.t('nav.contact')}</a></li>
+            <li class="mobile-only"><a href="${resumeFile}" class="mobile-resume-link" download>↓ ${resumeLabel}</a></li>
           </ul>
         </nav>
 
@@ -49,5 +54,27 @@ export function bindHeaderEvents(container) {
       const selectedLang = e.target.getAttribute('data-lang');
       i18n.setLanguage(selectedLang);
     });
+  });
+
+  const header = container.querySelector('#header-outer');
+  const toggle = container.querySelector('.mobile-menu-toggle');
+  const navLinks = container.querySelectorAll('.nav-link, .mobile-resume-link');
+
+  const closeMenu = () => {
+    if (!header || !toggle) return;
+    header.classList.remove('menu-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open navigation menu');
+  };
+
+  toggle?.addEventListener('click', () => {
+    const open = header.classList.toggle('menu-open');
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+  });
+
+  navLinks.forEach(link => link.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeMenu();
   });
 }
