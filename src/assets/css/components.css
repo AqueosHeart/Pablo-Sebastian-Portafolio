@@ -1163,6 +1163,48 @@ body.modal-open {
 .hero-secondary-btn { border: 1px solid rgba(255, 255, 255, 0.34); background: rgba(0, 0, 0, 0.25); color: #fff; }
 .hero-primary-btn:hover, .hero-secondary-btn:hover { transform: translateY(-2px); }
 
+.hero-secondary-btn svg,
+.hero-download-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.hero-github-btn { color: #ffffff; }
+.hero-github-btn:hover { border-color: #ffffff; background: rgba(255, 255, 255, 0.14); }
+.hero-linkedin-btn { color: #a9d4ff; border-color: rgba(10, 102, 194, 0.9); background: rgba(10, 102, 194, 0.2); }
+.hero-linkedin-btn:hover { color: #ffffff; background: #0a66c2; border-color: #60a9f3; }
+
+.hero-download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px 17px;
+  border: 1px solid rgba(229, 203, 255, 0.88);
+  border-radius: 999px;
+  background: linear-gradient(135deg, #8f4fdd 0%, #b876ff 54%, #d2a2ff 100%);
+  box-shadow: 0 0 18px rgba(185, 110, 255, 0.72), 0 0 44px rgba(148, 72, 222, 0.4);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 850;
+  text-decoration: none;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), filter var(--transition-fast);
+}
+
+.hero-download-btn:hover {
+  transform: translateY(-2px) scale(1.025);
+  filter: brightness(1.1);
+  box-shadow: 0 0 24px rgba(210, 162, 255, 0.9), 0 0 60px rgba(148, 72, 222, 0.58);
+}
+
+.hero-download-btn:focus-visible,
+.hero-secondary-btn:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
 .about-section { padding: 110px 0 40px; }
 .about-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 64px; align-items: start; }
 .section-eyebrow { margin-bottom: 14px; color: var(--accent-sage); font: 750 0.76rem/1.2 var(--font-mono); letter-spacing: 0.14em; }
