@@ -1,0 +1,3 @@
+# Public pages only. Each entry must be explicitly approved before collection.
+# Scrapling runs without stealth mode, proxies, CAPTCHA handling, login reuse, or bypasses.
+pages: []

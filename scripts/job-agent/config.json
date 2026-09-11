@@ -1,0 +1,61 @@
+{
+  "candidate": {
+    "name": "Pablo Sebastian Uriarte Betancourt",
+    "headline": "Junior Software Engineer focused on full-stack development and Python automation",
+    "location": "Mexico",
+    "preferredLocations": ["remote", "mexico", "latin america", "latam", "americas"],
+    "skills": [
+      "python",
+      "typescript",
+      "javascript",
+      "sql",
+      "next.js",
+      "react",
+      "node.js",
+      "playwright",
+      "postgresql",
+      "mysql",
+      "prisma",
+      "drizzle",
+      "rest api",
+      "git",
+      "docker",
+      "vitest",
+      "automation"
+    ]
+  },
+  "search": {
+    "minimumScore": 58,
+    "maximumNotificationsPerRun": 8,
+    "freshnessDays": 14,
+    "preferredTitles": [
+      "software engineer",
+      "software developer",
+      "full stack",
+      "fullstack",
+      "backend",
+      "web developer",
+      "python developer",
+      "automation engineer",
+      "application developer",
+      "support engineer"
+    ],
+    "juniorSignals": ["junior", "jr", "entry level", "early career", "new grad", "graduate", "associate", "level 1", "engineer i", "developer i"],
+    "excludedTitles": ["senior", "staff", "principal", "manager", "director", "head of", "lead", "architect", "vp", "vice president", "intern", "internship", "intermediate"],
+    "blockedLocationSignals": ["us only", "united states only", "must reside in the us", "canada only", "europe only"],
+    "excludedLocations": ["united states", "canada", "india", "united kingdom", "europe", "emea", "australia", "singapore"]
+  },
+  "sources": [
+    {"type": "greenhouse", "company": "Stripe", "board": "stripe"},
+    {"type": "greenhouse", "company": "Cloudflare", "board": "cloudflare"},
+    {"type": "greenhouse", "company": "GitLab", "board": "gitlab"},
+    {"type": "greenhouse", "company": "Elastic", "board": "elastic"},
+    {"type": "greenhouse", "company": "Datadog", "board": "datadog"},
+    {"type": "greenhouse", "company": "Vercel", "board": "vercel"},
+    {"type": "greenhouse", "company": "Canonical", "board": "canonical"},
+    {"type": "greenhouse", "company": "Wizeline", "board": "wizeline"},
+    {"type": "greenhouse", "company": "Remote", "board": "remotecom"},
+    {"type": "greenhouse", "company": "Turing", "board": "turing"},
+    {"type": "greenhouse", "company": "Bitso", "board": "bitso"}
+  ]
+}

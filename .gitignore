@@ -8,3 +8,11 @@ Thumbs.db
 
 .vercel
 .env*
+scripts/job-agent/data/
+scripts/job-agent/config.local.json
+tools/job-scout/.env
+tools/job-scout/data/
+tools/job-scout/.venv/
+Career-OS/
+__pycache__/
+tmp/

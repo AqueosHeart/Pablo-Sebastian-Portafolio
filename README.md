@@ -32,6 +32,12 @@ npm test
 npm run build
 ```
 
+## Telegram job scout
+
+The repository includes a private, human-approved job discovery pipeline for junior software-engineering roles. It searches configured public ATS boards, scores matches against the candidate profile, sends strong opportunities to Telegram, and records Accept or Reject decisions without submitting applications.
+
+See [scripts/job-agent/README.md](scripts/job-agent/README.md) for setup and commands.
+
 ## Demo safety
 
 The public demos are intentionally isolated from production. They use fictional data and simulated actions where needed; no public portfolio flow should create real orders, payments, emails, or fulfillment requests.

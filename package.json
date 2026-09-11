@@ -7,7 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "jobs:scan": "node scripts/job-agent/cli.mjs scan",
+    "jobs:dry-run": "node scripts/job-agent/cli.mjs scan --dry-run",
+    "jobs:cycle": "node scripts/job-agent/cli.mjs cycle",
+    "jobs:listen": "node scripts/job-agent/cli.mjs listen",
+    "jobs:telegram-test": "node scripts/job-agent/cli.mjs telegram-test"
   },
   "devDependencies": {
     "happy-dom": "^20.11.2",

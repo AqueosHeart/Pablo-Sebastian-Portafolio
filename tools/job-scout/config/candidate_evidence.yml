@@ -1,0 +1,30 @@
+# Verified public evidence only. Add a skill only after a real project, work, course, or certification proves it.
+evidence:
+  JavaScript:
+    - url: https://github.com/AqueosHeart/limitloot-demo
+      dated_at: "2026-09-11"
+      artifact: LimitLoot public repository
+  TypeScript:
+    - url: https://github.com/AqueosHeart/limitloot-demo
+      dated_at: "2026-09-11"
+      artifact: LimitLoot public repository
+  React:
+    - url: https://github.com/AqueosHeart/limitloot-demo
+      dated_at: "2026-09-11"
+      artifact: LimitLoot public repository
+  Next.js:
+    - url: https://github.com/AqueosHeart/aarc-erp-demo
+      dated_at: "2026-09-11"
+      artifact: AARC ERP public repository
+  MySQL:
+    - url: https://github.com/AqueosHeart/aarc-erp-demo
+      dated_at: "2026-09-11"
+      artifact: AARC ERP public repository
+  PostgreSQL:
+    - url: https://github.com/AqueosHeart/limitloot-demo
+      dated_at: "2026-09-11"
+      artifact: LimitLoot public repository
+  pytest:
+    - url: https://github.com/AqueosHeart
+      dated_at: "2026-09-11"
+      artifact: Job Scout implementation test suite

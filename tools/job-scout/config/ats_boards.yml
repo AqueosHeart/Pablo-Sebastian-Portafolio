@@ -1,0 +1,4 @@
+# Public board slugs only. Add an employer only after confirming its public ATS endpoint.
+greenhouse: [stripe, cloudflare, gitlab, elastic, datadog, vercel, canonical, wizeline, remote, turing, bitso]
+lever: []
+ashby: []
